@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile UI Design</title>
+    <link rel = "stylesheet" type ="text/css" href = "style2.css">
+<link rel ="stylesheet" href ="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+     
+   <div class = "mobile">
+       <div class = "top"></div>
+        <div class = "bottom"></div>
+         
+         <div class = "screen">
+        <img src ="re.jfif">
+        <h2>11.45<span>AM</span><br><span>13th Nov,2019</span></h2>
+        <ul>
+            <li><i class ="fa fa-phone" id ="phone" aria-hidden="true"></i></li>
+
+             <li><i class = "fa fa-comment-o" aria-hidden="true"></i></li>
+              <li><i class = "fa fa-picture-o" aria-hidden="true"></i></li>
+               <li><i class = "fa fa-camera" aria-hidden="true"></i></li>
+        </ul>
+         </div>
+    </div>
+<script src = "jquery-3.3.1.min.js"></script>
+       <script type ="text/javascript"  >
+           
+$(document).ready(function(){
+
+        $(".bottom").click(function(){
+            $(".screen").toggleClass("active")
+        })
+})
+    
+    
+    </script>
+    
+    <script  type ="text/javascript">
+$(document).ready(function(){
+   $("#phone").click(function(){     // $(".screen")=
+    alert("You have no number in your contacts")
+    })
+    })
+      </script>
+
+      <script type ="text/javascript">
+    $(document).ready(function(){
+    $(".fa-comment-o").click(function(){
+//    $(".screen")=
+        prompt("Write your message")
+        alert("Message Sent")
+      
+    })
+        
+})
+    </script>
+           <script type="text/javascript">
+                  $(document).ready(function(){
+    $(".fa-camera").click(function(){
+//    $(".screen")=
+        alert("Oops!,Camera is disabled for this device")
+       
+    })
+        
+})
+    
+    </script>
+           <script type ="text/javascript">
+       $(document).ready(function(){
+    $(".fa-picture-o").click(function(){
+//    $(".screen")=
+alert("You have no pictures in your gallery")
+    })
+       })
+    </script>
+            
+-->
+        
+  
+
+    
+</body>
+</html>
